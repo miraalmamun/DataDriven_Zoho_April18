@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ZohoLogLead]" parallel="tests">
+  <test thread-count="5" name="PotentialTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.PotentialTest">
+        <methods>
+          <include name="createPotentialTest" invocation-numbers="0 3 2 1"/>
+          <include name="initt"/>
+          <include name="quit"/>
+          <include name="deletePotentialAccountTest"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.PotentialTest -->
+    </classes>
+  </test> <!-- PotentialTest(failed) -->
+  <test thread-count="5" name="LoginTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="doLoginTest" invocation-numbers="0 1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test thread-count="5" name="LeadTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest">
+        <methods>
+          <include name="deleteLeadAccountTest" invocation-numbers="2 1 3 0"/>
+          <include name="initt"/>
+          <include name="createLeadTest" invocation-numbers="1 2 3 0"/>
+          <include name="quit"/>
+          <include name="convertLeadTest" invocation-numbers="1 3 2 0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest -->
+    </classes>
+  </test> <!-- LeadTest(failed) -->
+</suite> <!-- Failed suite [ZohoLogLead] -->

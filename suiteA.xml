@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite A" parallel="tests">
+	<test name="Test A1">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.suiteA.TestA1" />
+		</classes>
+	</test>
+	<test name="Test A2">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.suiteA.TestA2" />
+		</classes>
+	</test>
+	<test name="Test A3">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.suiteA.TestA3" />
+		</classes>
+	</test>
+</suite> 

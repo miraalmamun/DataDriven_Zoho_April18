@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite B]" parallel="tests">
+  <test thread-count="5" name="Test B1(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.suiteB.TestB1">
+        <methods>
+          <include name="quit"/>
+          <include name="testB1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.suiteB.TestB1 -->
+    </classes>
+  </test> <!-- Test B1(failed) -->
+  <test thread-count="5" name="Test B2(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.suiteB.TestB2">
+        <methods>
+          <include name="testB2"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.suiteB.TestB2 -->
+    </classes>
+  </test> <!-- Test B2(failed) -->
+  <test thread-count="5" name="Test B3(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.suiteB.TestB3">
+        <methods>
+          <include name="quit"/>
+          <include name="testB3"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.suiteB.TestB3 -->
+    </classes>
+  </test> <!-- Test B3(failed) -->
+</suite> <!-- Failed suite [Suite B] -->

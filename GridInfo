@@ -1,0 +1,29 @@
+From command prompts need to go project folder. For this project path is
+C:\Users\Mir\eclipse-workspace\DataDriven_Zoho_April18> Here we need to fire
+the command for Hub.
+"host": null,---But in real life we need to add hub ip address.
+----------------command to run hub-----------------------------
+C:\Users\Mir\eclipse-workspace\DataDriven_Zoho_April18>
+java -Dwebdriver.chrome.driver=c:\Driver\chromedriver.exe -jar jars\selenium-server-standalone-3.141.59.jar -role hub -hubConfig hub.json
+
+
+Nodes should register to http://192.168.0.2:8090/grid/register/
+Clients should connect to http://192.168.0.2:8090/wd/hub
+Nodes should register to http://172.29.4.52:8090/grid/register/
+Clients should connect to http://172.29.4.52:8090/wd/hub
+Note: On a single machine 'http' address can change every time you start
+the hub and note. Very important notice 'Clients should connect to'
+You have to use this address when you want to run from script
+----------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+By Me final for Node 1->
+
+java -Dwebdriver.chrome.driver=c:\Driver\chromedriver.exe -jar jars\selenium-server-standalone-3.141.59.jar -role node -nodeConfig node1.json
+-------------------------------------------------------------
+By Me final for Node 2->
+java -Dwebdriver.chrome.driver=c:\Driver\geckodriver.exe -jar jars\selenium-server-standalone-3.141.59.jar -role node -nodeConfig node2.json
+---------------------------------------------------------------------------------
+
+
+
+

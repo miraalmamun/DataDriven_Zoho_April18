@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite A]" parallel="tests">
+  <test thread-count="5" name="Test A1(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.suiteA.TestA1">
+        <methods>
+          <include name="quit"/>
+          <include name="testA1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.suiteA.TestA1 -->
+    </classes>
+  </test> <!-- Test A1(failed) -->
+  <test thread-count="5" name="Test A2(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.suiteA.TestA2">
+        <methods>
+          <include name="quit"/>
+          <include name="testA2"/>
+          <include name="testAA2"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.suiteA.TestA2 -->
+    </classes>
+  </test> <!-- Test A2(failed) -->
+  <test thread-count="5" name="Test A3(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.suiteA.TestA3">
+        <methods>
+          <include name="quit"/>
+          <include name="testA3"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.suiteA.TestA3 -->
+    </classes>
+  </test> <!-- Test A3(failed) -->
+</suite> <!-- Failed suite [Suite A] -->

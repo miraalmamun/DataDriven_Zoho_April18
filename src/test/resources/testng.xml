@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ZohoLogLead" parallel="tests">
+  <test name="LeadTest" allow-return-values = "true">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest"/>
+    </classes>
+  </test> 
+  <test name="LoginTest" allow-return-values = "true">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest"/>
+    </classes>
+  </test> 
+  <test name="PotentialTest" allow-return-values = "true">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.PotentialTest"/>
+    </classes>
+  </test> 
+</suite> 
+ 

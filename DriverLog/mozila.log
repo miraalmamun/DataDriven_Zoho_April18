@@ -1,0 +1,31 @@
+1564900026031	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Mir\\AppData\\Local\\Temp\\rust_mozprofile.PcyJLWCvZMbu"
+1564900030810	Marionette	INFO	Listening on port 50029
+1564900030962	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564900031000	Marionette	DEBUG	[6442450945] Frame script loaded
+1564900031003	Marionette	DEBUG	[6442450945] Frame script registered
+1564900031121	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1564900031980	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1564900033792	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.zoho.com/
+1564900036252	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.zoho.com/
+1564900036321	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.zoho.com/
+1564900036457	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://www.zoho.com/
+1564900036461	Marionette	DEBUG	[6442450945] Received DOM event unload for https://www.zoho.com/
+1564900036877	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://accounts.zoho.com/signin?servicename=ZohoHome&serviceurl=https%3A//home.zoho.com&signupurl=https%3A//www.zoho.com/signup.html
+1564900036902	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1564900036991	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://accounts.zoho.com/signin?servicename=ZohoHome&serviceurl=https%3A//home.zoho.com&signupurl=https%3A//www.zoho.com/signup.html
+1564900039427	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1564900042872	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://home.zoho.com/home
+1564900043741	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://home.zoho.com/home
+1564900043743	Marionette	DEBUG	[6442450945] Received DOM event unload for https://home.zoho.com/home
+1564900045427	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450955
+1564900045631	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://crm.zoho.com/crm/ShowHomePage.do
+JavaScript error: https://js.zohostatic.com/ichat/Aug_02_2019_2_https/js/wmsbar.js, line 1: TypeError: document.getElementById(...) is null
+1564900048068	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://crm.zoho.com/crm/org691517985/tab/Home/begin
+1564900048426	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1564900049665	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1564900050097	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1564900053387	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1564900056106	Marionette	INFO	Stopped listening on port 50029
+[Parent 20452, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child[Child 7616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/c[GPU 4220, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buil

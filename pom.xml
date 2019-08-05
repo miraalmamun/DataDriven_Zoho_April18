@@ -1,0 +1,259 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.qtpselenium.zoho.project</groupId>
+	<artifactId>DataDriven_Zoho_April18</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>DataDriven_Zoho_April18</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<!--extentreports latest version 2.41.2 -->
+		<!-- Selenium latest version==> 3.141.59 -->
+		<!-- -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<selenium-java.version>3.141.59</selenium-java.version>
+		<webdrivermanager.version>3.6.1</webdrivermanager.version>
+		<extentreports.version>2.41.2</extentreports.version>
+		<TestNG.version>6.14.3</TestNG.version>
+		<poi.version>4.1.0</poi.version>
+		<dom4j.version>1.6.1</dom4j.version>
+		<xmlbeans.version>3.1.0</xmlbeans.version>
+		<surefire.version>2.18.1</surefire.version>
+		<gson.version>2.8.1</gson.version>
+		<httpclient.version>4.3.3</httpclient.version>
+		<guava.version>23.0</guava.version>
+		<cglib.version>3.1</cglib.version>
+		<commons-io.version>2.6</commons-io.version>
+		<!-- poi new version 4.1.0 -->
+		<!-- -->
+	</properties>
+	<!-- ============================================================================ -->
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<!-- This is Selenium Java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium-java.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager 
+			WebDriverManager allows to automate the management of the binary drivers 
+			(e.g. chromedriver, geckodriver, etc.) required by Selenium WebDriver. You 
+			do not need any more System.setProperty("webdriver.chrome.driver", "/path/to/binary/chromedriver");. 
+			Insteed you need to use WebDriverManager.chromedriver().setup(); -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
+		</dependency>
+
+		<!--POI. Apache POI is a popular API that allows programmers to create, 
+			modify, and display MS Office files using Java programs. It is an open source 
+			library developed and distributed by Apache Software Foundation to design 
+			or modify Microsoft Office files using Java program. The Apache POI project 
+			is the master project for developing pure Java ports of file formats based 
+			on Microsoft's OLE 2 Compound Document Format -->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi. -->
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+		<!-- ============================================================================================== -->
+
+		<!-- Apache POI is also the master project for developing pure Java ports 
+			of file formats based on Office Open XML (ooxml). OOXML is part of an ECMA 
+			/ ISO standardisation effort. -->
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/dom4j/dom4j. DOM4J is an open source, 
+			Java-based library to parse XML documents. It is a highly flexible and memory-efficient 
+			API. It is Java-optimized and uses Java collections like List and Arrays. 
+			DOM4J works with DOM, SAX, XPath, and XSLT. It can parse large XML documents 
+			with very low memory footprint.DOM4J uses XPath expression to navigate through 
+			an XML document. Common DOM4J methods: Element.node(index) − Get the XML 
+			node at a particular index in an element. -->
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>${dom4j.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans XMLBeans 
+			uses XML Schema to compile Java interfaces and classes that can then be used 
+			to access and modify XML instance data. -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>${xmlbeans.version}</version>
+		</dependency>
+		<!-- =======================End of POI========================================================= -->
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng. Latest version 
+			7.00 -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${TestNG.version}</version>
+		</dependency>
+
+
+
+		<!-- Maven Surefire Plugin. ... The Surefire Plugin is used during the 
+			test phase of the build lifecycle to execute the unit tests of an application. 
+			It generates reports in two different file formats: Plain text files (*.txt) 
+			XML files (*.xml) -->
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire</artifactId>
+			<version>${surefire.version}</version>
+			<type>pom</type>
+		</dependency>
+
+		<!-- ======================================End of Surefire===================================== -->
+		<!-- =========================So far no need Gson============================================= -->
+		<!-- Gson is a Java library that can be used to convert Java Objects into 
+			their JSON representation. It can also be used to convert a JSON string to 
+			an equivalent Java object. Gson is an open-source project hosted at http://code.google.com/p/google-gson.Google 
+			Gson is a simple Java-based library to serialize Java objects to JSON and 
+			vice versa. -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
+		<!-- =============================================End of Gson================================ -->
+		<!-- The Apache HttpClient library allows to handling HTTP requests. To 
+			use this library add a dependency to your Maven -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${httpclient.version}</version>
+		</dependency>
+		<!-- ===============================End of HttpClient======================================= -->
+		<!--Guava is an open source, Java-based library and contains many core 
+			libraries of Google, which are being used in many of their projects. It facilitates 
+			best coding practices and helps reduce coding errors. -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<!-- ===============================================End of guava=============================== -->
+		<!--cglib is a powerful, high performance and quality Code Generation Library, 
+			It is used to extend JAVA classes and implements interfaces at runtime. See 
+			samples and API documentation to learn more about features. This library 
+			is free software, freely reusable for personal or commercial purposes. -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>${cglib.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io The Apache 
+			Commons IO are the components of the Apache Commons which are derived from 
+			Java API and provides various utility classes for common operations for File 
+			IO covering wide range of use cases. It helps avoid writing boilerplate code -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+
+
+		<!-- ===============================================End of cglib=============================== -->
+		<!-- Apache Commons Validator. Apache Commons Validator provides the building 
+			blocks for both client side validation and server side data validation. It 
+			may be used standalone or with a framework like Struts -->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc -->
+		<!-- To get response code of a URL -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>fluent-hc</artifactId>
+			<version>4.5.9</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.10.3</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.5</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+
+	</dependencies>
+</project>
