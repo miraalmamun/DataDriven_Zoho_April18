@@ -20,7 +20,7 @@
 		<webdrivermanager.version>3.6.1</webdrivermanager.version>
 		<extentreports.version>2.41.2</extentreports.version>
 		<TestNG.version>6.14.3</TestNG.version>
-		<poi.version>4.1.0</poi.version>
+		<poi.version>4.1.1</poi.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<xmlbeans.version>3.1.0</xmlbeans.version>
 		<surefire.version>2.18.1</surefire.version>
